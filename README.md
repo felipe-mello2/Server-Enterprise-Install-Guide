@@ -69,7 +69,7 @@ Save file, drag driver files to the USB Stick
 
 As these drivers are unsigned, they will need to be installed with driver signature off
 
-**OFF** <br>
+**OFF**
 In cmd or powershell <br>
 bcdedit -set loadoptions DISABLE_INTEGRITY_CHECKS <br>
 bcdedit -set TESTSIGNING ON <br>
@@ -90,7 +90,7 @@ Restart PC, spam F2 or DEL and go to bios <br>
 Enable TPM (for W11 builds) <br>
 Disable secure boot (for some oem prebuilts & laptops) <br>
 Change boot order to USB <br>
-Install the ISO (Server users make sure to install desktop version)
+Install the ISO (Server users, make sure to install desktop version)
 
 **CONVERT EVAL TO NORMAL EDITION**
 
@@ -132,10 +132,14 @@ In powershell run this <br>
 **Install-WindowsFeature -Name Wireless-Networking**
 
 **AMD/INTEL CHIPSET DRIVERS NOT INSTALLING/WORKING**
-Extract files (On AMD these may be already extracted if you ran the installer in "C:\AMD\Chipset_Software\Packages\IODriver" <br>
+
+Extract files <br>
+On AMD these may be already extracted if you ran the installer <br> 
+Found in "C:\AMD\Chipset_Software\Packages\IODriver" <br>
 Install from device manager
  
 **AMD GRAPHICS DRIVERS NOT INSTALLING/WORKING**
+
 Extract files <br>
 Install from device manager
 
@@ -161,5 +165,3 @@ Change new password to blank
 
 Run "gpedit.msc"
 ![image](https://github.com/user-attachments/assets/c33d3828-a006-4178-ad1e-13a626489c2d)
-
-**DISABLE VERBOSE MESSAGES**
