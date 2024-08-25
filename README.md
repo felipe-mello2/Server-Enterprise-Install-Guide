@@ -52,7 +52,8 @@ Backup any files to USB (if needed)
 
 Some ethernet cards wont work on server such as "i225-V, i226-V" <br>
 Here is a work around <br> 
-https://www.thomas-krenn.com/de/wiki/Intel_i225-V_und_i226-V_Treiber_in_Windows_Server_2022_installieren <br> 
+https://www.thomas-krenn.com/de/wiki/Intel_i225-V_und_i226-V_Treiber_in_Windows_Server_2022_installieren <br>
+https://www.reddit.com/r/WindowsServer2019/comments/tvyquw/here_is_an_intel_i225v_mod_driver_for_windows <br>
 Download latest driver for your ethernet card, extract it <br>
 Edit "e2f.inf" in notepad <br>
 Under **"[Intel.NTamd64.10.0...17763]"** add . . .
@@ -93,6 +94,49 @@ Install the ISO (Server users make sure to install desktop version)
 
 **CONVERT EVAL TO NORMAL EDITION**
 
+https://massgrave.dev/kms38
 
+In powershell run this <br>
+Install-WindowsFeature -Name VolumeActivation -IncludeAllSubFeature –IncludeManagementTools
+
+In powershell run this <br>
+- W10 Server 21h2 2022 <br>
+**dism /online /set-edition:ServerStandard /productkey:VDYBN-27WPP-V4HQT-9VMD4-VMK7H /accepteula**
+
+- W11 Server 24h2 2025 <br>
+**dism /online /set-edition:ServerStandard /productkey:TVRH6-WHNXV-R9WG3-9XRFY-MY832 /accepteula**
+
+- W10 LTSC 21h2 2021 <br>
+**dism /online /set-edition:ServerStandard /productkey:KBN8V-HFGQ4-MGXVD-347P6-PDQGT /accepteula**
+
+- W11 LTSC 23h2 2024 <br>
+**dism /online /set-edition:ServerStandard /productkey:KBN8V-HFGQ4-MGXVD-347P6-PDQGT /accepteula**
+
+Restart
+
+**ACTIVATE**
+
+https://github.com/massgravel/Microsoft-Activation-Scripts
+
+In powershell run this <br>
+**irm https://get.activated.win | iex** <br>
+
+Select 3 <br>
+Select 1
+
+![image](https://github.com/user-attachments/assets/9dd69416-98f4-4687-b467-d1aa263f172e)
+
+**GEFORCE NOT WORKING ON W10 Server 21h2 2022**
+
+In powershell run this <br>
+**Install-WindowsFeature -Name Wireless-Networking**
+
+**AMD/INTEL CHIPSET DRIVERS NOT INSTALLING/WORKING**
+Extract files (On AMD these may be already extracted if you ran the installer in "C:\AMD\Chipset_Software\Packages\IODriver" <br>
+Install from device manager
+ 
+**AMD GRAPHICS DRIVERS NOT INSTALLING/WORKING**
+Extract files <br>
+Install from device manager
 
 
