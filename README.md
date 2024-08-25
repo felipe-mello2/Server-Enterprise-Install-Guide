@@ -1,4 +1,4 @@
-# Server-LTSC-Install-Guide
+# Server-Enterprise-Install-Guide
 **ABOUT** <br>
 LTSC (Long-Term Servicing Channel) and Windows Server editions are streamlined versions of Windows that focus on stability and long-term support.
 They receive no feature updates, only security updates, and are supported for up to 10 years.
