@@ -27,9 +27,72 @@ Click "Download Windows 11 IoT Enterprise LTSC" <br>
 Enter fake information <br>
 Click "ISO - Windows 11 IoT Enterprise LTSC 2024 Evaluation, x64 or AMD64 edition"
 
-BURN TO USB
+**BURN TO USB**
 - **Rufus** https://rufus.ie/en/ <br>
 Click and download "Portable, Windows x64" <br>
 Plug in USB <br>
 Open Rufus <br>
-Burn to usb
+Select USB <br>
+Select ISO <br>
+
+Similar to this <br>
+![image](https://github.com/user-attachments/assets/1c37c78f-395f-46a7-b04d-c2c0448d9336)
+
+Click start
+
+Leave these "autounattended" settings blank or you will brick the install
+![image](https://github.com/user-attachments/assets/f4777d16-7370-426e-902c-a5792b35e9c1)
+
+Disable bitlocker in windows settings (if on)
+![image](https://github.com/user-attachments/assets/a32a984d-7cce-4ba8-a5fa-5bbbbdb005ad)
+
+Backup any files to USB (if needed)
+
+**PREPARE ETHERNET DRIVERS**
+
+Some ethernet cards wont work on server such as "i225-V, i226-V" <br>
+Here is a work around <br> 
+https://www.thomas-krenn.com/de/wiki/Intel_i225-V_und_i226-V_Treiber_in_Windows_Server_2022_installieren <br> 
+Download latest driver for your ethernet card, extract it <br>
+Edit "e2f.inf" in notepad <br>
+Under **"[Intel.NTamd64.10.0...17763]"** add . . .
+
+**%E15F3NC.DeviceDesc% = E15F3.10.0.1..17763, PCI\VEN_8086&DEV_15F3&REV_01 <br>
+%E15F3_2NC.DeviceDesc% = E15F3_2.10.0.1..17763, PCI\VEN_8086&DEV_15F3&REV_02 <br>
+%E15F3_3NC.DeviceDesc% = E15F3_3.10.0.1..17763, PCI\VEN_8086&DEV_15F3&REV_03 <br>
+%E125CNC.DeviceDesc% = E125C.10.0.1..17763, PCI\VEN_8086&DEV_125C**
+
+A simmilar method for other ethernet cards can be used if you find the device manager ID'S <br>
+
+Save file, drag driver files to the USB Stick
+
+As these drivers are unsigned, they will need to be installed with driver signature off
+
+**OFF** <br>
+In cmd or powershell <br>
+bcdedit -set loadoptions DISABLE_INTEGRITY_CHECKS <br>
+bcdedit -set TESTSIGNING ON <br>
+bcdedit -set NOINTEGRITYCHECKS ON <br>
+restart <br>
+install driver via device manager
+
+**ON**
+In cmd or powershell <br>
+bcdedit /deletevalue loadoptions <br>
+bcdedit -set TESTSIGNING OFF <br>
+bcdedit -set NOINTEGRITYCHECKS OFF <br>
+restart
+
+**TO BIOS**
+
+Restart PC, spam F2 or DEL and go to bios <br>
+Enable TPM (for W11 builds) <br>
+Disable secure boot (for some oem prebuilts & laptops) <br>
+Change boot order to USB <br>
+Install the ISO (Server users make sure to install desktop version)
+
+**CONVERT EVAL TO NORMAL EDITION**
+
+
+
+
