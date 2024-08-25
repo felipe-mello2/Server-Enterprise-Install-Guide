@@ -124,7 +124,7 @@ In powershell run this <br>
 Select 3 <br>
 Select 1
 
-![image](https://github.com/user-attachments/assets/9dd69416-98f4-4687-b467-d1aa263f172e)
+![image](https://github.com/user-attachments/assets/74896c99-de18-4820-81a5-24e316ac7750)
 
 **GEFORCE NOT WORKING ON W10 Server 21h2 2022**
 
@@ -138,5 +138,28 @@ Install from device manager
 **AMD GRAPHICS DRIVERS NOT INSTALLING/WORKING**
 Extract files <br>
 Install from device manager
+
+**OTHER DRIVERS**
+
+Snappy Driver Installer Origin <br>
+https://www.glenn.delahoy.com/snappy-driver-installer-origin/
+
+**REMOVE SERVER MANAGER ON BOOT**
+
+![image](https://github.com/user-attachments/assets/3500f7f6-0ced-4524-b8ef-316d167da885)
+
+**REMOVE PASSWORD REQUIREMENT**
+
+Run "gpedit.msc" <br>
+![image](https://github.com/user-attachments/assets/ec992915-c0a7-498f-800f-e76164d6a208)
+
+Change new password to blank
+![image](https://github.com/user-attachments/assets/d2e98128-369d-4f74-abd3-6bdf40dc058c)
+
+
+**DISABLE SHUTDOWN EVENT TRACKER**
+
+Run "gpedit.msc"
+![image](https://github.com/user-attachments/assets/c33d3828-a006-4178-ad1e-13a626489c2d)
 
 
