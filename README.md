@@ -97,7 +97,7 @@ Install the ISO (Server users, make sure to install desktop version)
 https://massgrave.dev/kms38
 
 In powershell run this <br>
-Install-WindowsFeature -Name VolumeActivation -IncludeAllSubFeature –IncludeManagementTools
+**Install-WindowsFeature -Name VolumeActivation -IncludeAllSubFeature –IncludeManagementTools**
 
 In powershell run this <br>
 - W10 Server 21h2 2022 <br>
@@ -123,8 +123,6 @@ In powershell run this <br>
 
 Select 3 <br>
 Select 1
-
-![image](https://github.com/user-attachments/assets/74896c99-de18-4820-81a5-24e316ac7750)
 
 **GEFORCE NOT WORKING ON W10 Server 21h2 2022**
 
