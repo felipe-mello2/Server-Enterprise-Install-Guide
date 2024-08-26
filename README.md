@@ -82,7 +82,7 @@ Change boot order to USB <br>
 Install the ISO (Server users, install desktop version) <br>
 Install network driver
 
-**CONVERT EVAL TO NORMAL EDITION**
+**SERVER CONVERT EVAL TO NORMAL EDITION**
 - In powershell run <br>
 **Install-WindowsFeature -Name VolumeActivation -IncludeAllSubFeature –IncludeManagementTools**
 
@@ -90,11 +90,13 @@ Install network driver
 **dism /online /set-edition:ServerStandard /productkey:VDYBN-27WPP-V4HQT-9VMD4-VMK7H /accepteula** <br>
 - W11 Server 24h2 2025 <br>
 **dism /online /set-edition:ServerStandard /productkey:TVRH6-WHNXV-R9WG3-9XRFY-MY832 /accepteula** <br>
-- W10 LTSC 21h2 2021 <br>
-**dism /online /set-edition:ServerStandard /productkey:KBN8V-HFGQ4-MGXVD-347P6-PDQGT /accepteula** <br>
-- W11 LTSC 23h2 2024 <br>
-**dism /online /set-edition:ServerStandard /productkey:KBN8V-HFGQ4-MGXVD-347P6-PDQGT /accepteula** <br>
 Restart
+
+**LTSC CONVERT EVAL TO NORMAL EDITION**
+- https://github.com/victorlish/Convert_to_Windows_10_LTSC <br>
+Download file <br>
+Extract <br>
+Open run.bat <br>
 
 **ACTIVATE**
 - https://github.com/massgravel/Microsoft-Activation-Scripts <br>
