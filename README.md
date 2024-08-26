@@ -93,10 +93,10 @@ Install network driver
 Restart
 
 **LTSC CONVERT EVAL TO NORMAL EDITION**
-- https://github.com/victorlish/Convert_to_Windows_10_LTSC <br>
-[Download file](<https://github.com/fr33thytweaks/Server-Enterprise-Install-Guide](https://github.com/fr33thytweaks/Server-Enterprise-Install-Guide/raw/main/Convert%20LTSC%20Eval.zip)>) <br>
+- https://github.com/victorlish/Convert_to_Windows_10_LTSC <br> <br>
+- [Download file](<https://github.com/fr33thytweaks/Server-Enterprise-Install-Guide](https://github.com/fr33thytweaks/Server-Enterprise-Install-Guide/raw/main/Convert%20LTSC%20Eval.zip)>) <br>
 Extract <br>
-Run run.bat as admin
+Run "run.bat" as admin
 
 **ACTIVATE**
 - https://github.com/massgravel/Microsoft-Activation-Scripts <br>
