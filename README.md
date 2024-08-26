@@ -80,6 +80,7 @@ Enable TPM (for W11) <br>
 Disable secure boot (for some oem prebuilts & laptops) <br>
 Change boot order to USB <br>
 Install the ISO (Server users, install desktop version) <br>
+LTSC users, be sure to use "domain join instead" during setup <br>
 Install network driver
 
 **SERVER CONVERT EVAL TO NORMAL EDITION**
