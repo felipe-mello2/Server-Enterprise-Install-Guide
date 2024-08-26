@@ -137,3 +137,8 @@ Change new password to blank
 **DISABLE SHUTDOWN EVENT TRACKER** <br>
 Run "gpedit.msc"
 ![image](https://github.com/user-attachments/assets/c33d3828-a006-4178-ad1e-13a626489c2d)
+
+## Video
+[Video](<https://youtu.be/jpKIiimS9Ho>)
+
+[![Video](https://img.youtube.com/vi/jpKIiimS9Ho/maxresdefault.jpg)]([https://www.youtube.com/watch?v=jpKIiimS9Ho](https://youtu.be/jpKIiimS9Ho))
