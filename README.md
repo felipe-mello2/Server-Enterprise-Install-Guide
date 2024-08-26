@@ -42,7 +42,7 @@ Click start <br>
 Leave "Windows User Experience" settings blank or you will brick the install <br>
 Disable bitlocker in windows settings <br>
 
-**PREPARE ETHERNET DRIVERS**
+**SERVER PREPARE ETHERNET DRIVERS**
 - https://www.thomas-krenn.com/de/wiki/Intel_i225-V_und_i226-V_Treiber_in_Windows_Server_2022_installieren <br>
 https://www.reddit.com/r/WindowsServer2019/comments/tvyquw/here_is_an_intel_i225v_mod_driver_for_windows <br>
 Some ethernet cards wont work on server such as "i225-V, i226-V" <br>
